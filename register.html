@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="home.html">
+            <div class="brand">
+                <img src="./assets/logo.png" alt="Logo">
+                <h2 class="nowrap">HI-TOYZ</h2>
+            </div>
+        </a>
+        <!-- NAVIGATION BAR -->
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="menuButton" onclick="showMenu()">
+                <div class="hamburger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section class="registerCard">
+            <p class="register">Register</p>
+            <form action="" class="form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <p id="nameError"></p>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Your password">
+                <p id="passwordError"></p>
+    
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="hellocuppy@gmail.com">
+                <p id="emailError"></p>
+                
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date">
+                <p id="dateError"></p>
+    
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" class="agreementLabel">I agree to terms and conditions</label>
+                <p id="agreementError"></p>
+            </form>
+            <input type="button" value="Submit" id="submitButton" onclick="validate()">
+            <p id="success"></p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="profile">
+            <div class="logo">
+                <div class="gambarLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="descLogo">
+                    <p class="namaLogo nowrap">HI-TOYZ</p>
+                    <p>Happy toy, happy kids!</p>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <p>Follow us</p>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram iconself"></i>
+                    <i class="fa-brands fa-facebook iconself"></i>
+                    <i class="fa-brands fa-twitter iconself"></i>
+                    <i class="fa-brands fa-youtube iconself"></i>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs">
+            <h3>ABOUT US</h3>
+            <p>About HI-Toyz</p>
+            <p>Partners</p>
+            <p>Events</p>
+        </section>
+        <section class="support">
+            <h3>SUPPORT</h3>
+            <p>FAQ</p>
+            <p>Payments</p>
+            <p>Shipping Rates & Policy</p>
+            <p>Replacements & Returns</p>
+            <p>Privacy Policy</p>
+        </section>
+        <section class="contactUs">
+            <h3>CONTACT US</h3>
+            <div class="location">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <p>Jl. Raya Kb. Jeruk No.27, Jakarta Barat</p>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone contactIcon"></i>
+                <p>081234567888</p>
+            </div>
+        </section>
+        <div class="allRights"><p>@HI-Toyz 2023 All Rights Reserved</p></div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="home.html">
+            <div class="brand">
+                <img src="./assets/logo.png" alt="Logo">
+                <h2 class="nowrap">HI-TOYZ</h2>
+            </div>
+        </a>
+        <!-- NAVIGATION BAR -->
+        <div class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            <div class="menuButton" onclick="showMenu()">
+                <div class="hamburger">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="topHeader">Product</h2>
+        <p class="sortBy">Sort by</p>
+        <div class="dropDown">
+            <div class="select">
+                <span class="selectedOption">All products</span>
+                <div class="iconDropDown"></div>
+            </div>
+            <ul class="sortList">
+                <li class="active">All products</li>
+                <li>Name: A-Z</li>
+                <li>Name: Z-A</li>
+                <li>Price: Low to high</li>
+                <li>Price: High to low</li>
+                <li>Newest</li>
+                <li>Oldest</li>
+            </ul>
+        </div>
+        <input type="text" id="search" name="search" class="search" placeholder="Search product">
+        <div class="products">
+            <div class="card">
+                <img src="./assets/totoro.png" alt="Totoro">
+                <p class="productName">Found You! Medium Blue Totoro Statue</p>
+                <article>
+                    If you've ever wanted to meet Medium Blue Totoro now is your chance with this resin statue!
+                    Standing nearly 14.5" tall, this resin statue is highly detailed Totoro carrying his acorn sack.
+                    Complete the scene of Medium Blue Totoro running away with Small White Totoro Statue.
+                </article>
+                <p class="productPrice">Rp20.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/jiji.png" alt="Jiji">
+                <p class="productName">Jiji and Stuffed Plush Jiji Statue Desk Clock</p>
+                <article>
+                    Jiji sits perplexed beside a stuffed plush Jiji atop a woodgrain pedestal with Kiki's iconic Delivery 
+                    Service logo. Standing over 4.25" tall, this desk clock features an analog clock with a unique Kiki's 
+                    Delivery Service themed clock face.
+                </article>
+                <p class="productPrice">Rp70.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/pikachu.png" alt="Pikachu">
+                <p class="productName">Pikachu "Pokémon" Nanoblock</p>
+                <article>
+                    Pikachu from Nanoblock's Pokemon Collection series stands approximately 1.8" tall and has 120 pieces. This kit features all the details one would expect and is fun and easy to build! This is considered an entry level kit. Complete your Nanoblock's Pokemn Collection Series!
+                </article>
+                <p class="productPrice">Rp30.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/squirtle.png" alt="Squirtle">
+                <p class="productName">Squirtle "Pokémon" Nanoblock</p>
+                <article>
+                    Squirtle from Nanoblock's Pokemon Collection series stands approximately 1.7" tall and has 110 pieces. This kit features all the details one would expect and is fun and easy to build! This is considered an entry level kit.
+                </article>
+                <p class="productPrice">Rp30.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/totoro2.png" alt="Totoro 2">
+                <p class="productName">Totoro Dondoko Dance Statue Desk</p>
+                <article>
+                    Big Totoro, Medium Totoro, and Small Totoro are doing the Dondoko Dance to grow the plants! Standing nearly 4" tall, this desk clock features an analog clock with a unique Totoro themed face. Highly detailed at every angle makes it great for displaying from any side.
+                </article>
+                <p class="productPrice">Rp100.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/safari.png" alt="Little Safari">
+                <p class="productName">Little People Share & Care Safari Playset</p>
+                <article>
+                    Lions, and hippos, and elephants—oh my! At over 2 feet tall, with two sides of play and a variety of exciting lights, sounds, songs and phrases, the Little People® Share & Care Safari™ playset is loaded with wild fun for your little person to discover.                
+                </article>
+                <p class="productPrice">Rp200.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/anyaandbond.png" alt="Anya & Bond">
+                <p class="productName">Anya & Bond “SpyxFamily”</p>
+                <article>
+                    "Anya Forger & Bond Forger" from the TV anime "SPY x FAMILY" appears in the non-moving figure series "FiguartsZERO" x HI-Toyz that expresses the charm and world view of the characters. Expressing a cute world view that imaged the scene in the work.
+                </article>
+                <p class="productPrice">Rp70.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/kanao.png" alt="Tsuyuri Kanao">
+                <p class="productName">Tsuyuri Kanao “Kimietsu no Yaiba”</p>
+                <article>
+                    If you've ever wanted to meet Medium Blue Totoro now is your chance with this resin statue!
+                    Standing nearly 14.5" tall, this resin statue is highly detailed Totoro carrying his acorn sack.
+                    Complete the scene of Medium Blue Totoro running away with Small White Totoro Statue.
+                </article>
+                <p class="productPrice">Rp400.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/belle.png" alt="Belle">
+                <p class="productName">Disney Princess Belle Fashion Doll</p>
+                <article>
+                    Inspired by the intelligent and adventurous princess from Disney's Beauty and the Beast, this posable Belle doll is shown in a sparkling outfit and accessories that include shoes and a tiara. In her signature look from the movie, this Belle doll is ready for any adventure!
+                </article>
+                <p class="productPrice">Rp120.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/ford.png" alt="Ford">
+                <p class="productName">Ford GT Mk II 2019 Pebble Beach Concours d'Elegance</p>
+                <article>
+                    MiniGT Ford GT Mk II, released in 2019. This Ford miniature is designed with high quality materials. The manufacturer of the scalemodel is TopSpeed.
+                </article>
+                <p class="productPrice">Rp100.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/datsun.png" alt="Datsun">
+                <p class="productName">Datsun 510 Pro Street KDO510 MiJo Exclusive</p>
+                <article>
+                    MiniGT newest release, Datsun 510 Pro Street KDO510 MiJo Exclusive! This Datsun 510 is USA Exclusive Product. Item number is KHMG008.
+                </article>
+                <p class="productPrice">Rp80.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/expectro.png" alt="Expecto Patronum">
+                <p class="productName">Expecto Patronum</p>
+                <article>
+                    Build either Harry Potter's stag Patronus or Professor Remus Lupin's wolf Patronus for protection against the Dementors™! Builders can zoom in, rotate sets and track their progress using the fun, intuitive LEGO® Builder app.
+                </article>
+                <p class="productPrice">Rp100.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/trex.png" alt="T-Rex">
+                <p class="productName">Jurassic World Super Colossal Tyrannosaurus Rex Dinosaur Figure</p>
+                <article>
+                    Discover adventure with this Super Colossal Tyrannosaurus Rex dinosaur action figure inspired by Jurassic World: Dominion! This figure can swallow mini figures! Pull out the mini figs from an existing collection and let the T-rex chomp down on them, then undo the latch on the belly to release them and start a new carnivorous storyline!
+                </article>
+                <p class="productPrice">Rp200.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/velociraptor.png" alt="Velociraptor">
+                <p class="productName">Jurassic World Large Dinosaur Figure Super Colossal Velociraptor Blue</p>
+                <article>
+                    This figure is approximately 18-inches high and more than 3 feet long. Based on the Jurassic World fan-favorite character and features realistic skin texture and color including her signature blue stripeWatch Out! To release the mini dinosaurs, open the door on the belly.
+                </article>
+                <p class="productPrice">Rp100.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/ankylosaurus.png" alt="Ankylosaurus">
+                <p class="productName">Jurassic World Camp Cretaceous Roar Attack Ankylosaurus Bumpy Figure</p>
+                <article>
+                    Get ready for more thrills and adventure with Jurassic World Dino Escape! Activate the strike feature and hear three levels of aggressive sounds that build up to a mighty roar. Each strike action is iconic to its respective species.
+                </article>
+                <p class="productPrice">Rp100.000</p>
+            </div>
+            <div class="card">
+                <img src="./assets/tamagotchi.png" alt="Tamagotchi">
+                <p class="productName">Tamagotchi On - Fairy (Blue)</p>
+                <article>
+                    Tamagotchi is back with the next generation of the interactive virtual pet called Tamagotchi On with a blue shell and a fairy theme. Nurture your Tamagotchi character and explore Tamagotchi Planet. You can also connect to your friend's Tamagotchi On or the Tamagotchi On App for even more things to do.
+                </article>
+                <p class="productPrice">Rp60.000</p>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="profile">
+            <div class="logo">
+                <div class="gambarLogo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="descLogo">
+                    <p class="namaLogo nowrap">HI-TOYZ</p>
+                    <p>Happy toy, happy kids!</p>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <p>Follow us</p>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram iconself"></i>
+                    <i class="fa-brands fa-facebook iconself"></i>
+                    <i class="fa-brands fa-twitter iconself"></i>
+                    <i class="fa-brands fa-youtube iconself"></i>
+                </div>
+            </div>
+        </section>
+        <section class="aboutUs">
+            <h3>ABOUT US</h3>
+            <p>About HI-Toyz</p>
+            <p>Partners</p>
+            <p>Events</p>
+        </section>
+        <section class="support">
+            <h3>SUPPORT</h3>
+            <p>FAQ</p>
+            <p>Payments</p>
+            <p>Shipping Rates & Policy</p>
+            <p>Replacements & Returns</p>
+            <p>Privacy Policy</p>
+        </section>
+        <section class="contactUs">
+            <h3>CONTACT US</h3>
+            <div class="location">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <p>Jl. Raya Kb. Jeruk No.27, Jakarta Barat</p>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone contactIcon"></i>
+                <p>081234567888</p>
+            </div>
+        </section>
+        <div class="allRights"><p>@HI-Toyz 2023 All Rights Reserved</p></div>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

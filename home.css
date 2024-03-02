@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&family=Poppins&family=Rubik&display=swap');
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: white;
+}
+
+/* END OF RESET */
+
+
+/* UTILITY */
+:root {
+    --CORN: #FEFAE0;
+    --PAPAYA: #FAEDCD;
+    --BEIGE: #E9EDC9;
+    --SOFTBROWN: #F3E9D6;
+    --BROWN: #D4A373;
+    --DARKBROWN: #805F3F;
+    --DARKBEIGE: #A8B090;
+    --DARKDARKBEIGE: #5E654A;
+    --RED: #e26a6a;
+
+    --PADDINGMAIN: 3rem;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--CORN);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand img {
+    width: 48px;
+    height: auto;
+}
+
+.brand h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* NAVIGATION BAR */
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.navBar {
+    width: 50%;
+    height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a:any-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+nav a:hover, a:focus {
+    color: var(--DARKBROWN);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 3px;
+    bottom: -3px;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: var(--DARKBROWN);
+}
+
+.menuButton {
+    display: none;
+}
+
+/* END OF HEADER AND NAVIGATION BAR*/
+
+
+/* CONTENT */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0 10%;
+    width: 100%;
+}
+
+main h1, h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+main h2 {
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+main p {
+    font-size: 1.25rem;
+}
+
+/* BANNER HERO */
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 4rem 0 12.5rem 0;
+}
+
+.bannerText {
+    width: 50%;
+    padding-right: 2rem;
+    color: var(--DARKBROWN);
+}
+
+.bannerText .tagline {
+    font-size: 4rem;
+}
+
+.bannerText p, button {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bannerText p {
+    margin: 2rem 0;
+}
+
+.bannerText .productButton {
+    font-size: 1.1rem;
+    background-color: var(--BEIGE);
+    border: 0px;
+    border-radius: 20px;
+    width: 30%;
+    height: 60px;
+    color: var(--DARKDARKBEIGE);
+}
+
+.bannerImage {
+    width: 50%;
+    height: 480px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.bannerImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 100px;
+}
+
+.bannerImage .kotakBg {
+    width: 95.7%;
+    height: 100%;
+    position: relative;
+    background-color: var(--PAPAYA);
+    top: -450px;
+    right: -24px;
+    z-index: -1;
+    border-radius: 0 0 0 100px;
+}
+
+/* HISTORY */
+.history {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(233,237,201,0) 0%, rgba(233,237,201,0.52) 15%, rgba(254,250,224,1) 30%, rgba(254,250,224,1) 70%, rgba(233,237,201,0.52) 85%, rgba(233,237,201,0) 100%);
+    padding: 3rem 12rem;
+    margin-bottom: 4rem;
+}
+
+.history h2 {
+    margin-bottom: 1.5rem;
+}
+
+.history article {
+    font-size: 1.25rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* PARTNERS */
+
+.partner {
+    text-align: center;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.line {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: 30%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(184,160,128,1) 0%, rgba(233,237,201,1) 33%, rgba(250,237,205,1) 69%, rgba(254,250,224,1) 100%);
+}
+
+.partner .iconPartner {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconPartner img {
+    width: 62px;
+    margin: 0 min(2%, 24px);
+}
+
+.bestSeller {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.bestProducts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+}
+
+.card {
+    width: 256px;
+    margin: 1rem;
+    text-align: left;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    filter: drop-shadow(0px 4px 4px rgb(181, 177, 177));
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+.card p, article {
+    padding: 0px 20px;
+}
+.card .productName {
+    padding-top: 0.75rem;
+    padding-bottom: 0.375rem;
+}
+.card article {
+    padding-bottom: 0.5rem;
+}
+.card .productPrice {
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+}
+.card:hover {
+    filter: drop-shadow(0px 4px 8px rgb(119, 116, 116));
+    transform: scale(1.05, 1.05);
+    transition: 0.5s ease-out;
+}
+
+.productButton:hover {
+    background-color: var(--DARKBEIGE);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 2.5rem 10% 0 10%;
+    background-color: var(--DARKBROWN);
+    display: grid;
+    grid-template-columns: 28% 24% 24% 24%;
+    height: max-content;
+    /* column-gap: 1rem; */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.875rem;
+}
+
+footer section {
+    padding: 0 1rem;
+}
+
+footer .profile {
+    grid-column: 1;
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+.profile .logo {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.logo .gambarLogo {
+    display: flex;
+    width: 50%;
+    height:min-content;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 8px;
+    max-width: 58px;
+}
+
+.logo .descLogo {
+    display: block;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo .namaLogo {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.25rem;
+}
+
+.logo p {
+    margin: 3px 0;
+}
+
+.profile .socialMedia {
+    grid-row: 2;
+    display: block;
+}
+
+.socialMedia .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.icon .iconself {
+    scale: 1.2;
+}
+
+.profile .allRights {
+    grid-row: 3;
+}
+
+footer p {
+    margin: 3px;
+}
+
+footer .aboutUs {
+    grid-column: 2;
+}
+
+footer .support {
+    grid-column: 3;
+}
+
+footer .contactUs {
+    grid-column: 4;
+}
+
+footer .allRights {
+    grid-column: 1 / 5;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .location, .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+footer .contactIcon {
+    margin-right: 0.5rem;
+}
+
+
+
+/* ANIMATION */
+
+@keyframes showLine {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 60%;
+        left: -3.5%;
+    }
+    100% {
+        width: 120%;
+        left: -7%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        margin-bottom: 11rem;
+    }
+    .bannerText .tagline {
+        font-size: 2.8rem;
+    }
+    .bannerText {
+        width: 40%;
+        padding-right: 32px;
+    }
+    .bannerText p {
+        margin: 0.9rem 0;
+        font-size: 1.1rem;
+    }
+    .bannerImage {
+        width: 60%;
+        height: 420px;
+        right: 0;
+    }
+    .bannerImage .kotakBg {
+        top: -390px;
+        width: 96%;
+    }
+    .bannerText .productButton {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem 8%;
+    }
+    main {
+        padding: 0rem 8%;
+        margin-top: 68px;
+    }
+    main p {
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1.5rem 8% 0 8%;
+    }
+    .brand h2 {
+        font-size: 1.25rem;
+    }
+    .brand img {
+        width: 36px;
+    }
+    .navBar {
+        width: 60%;
+        height: 100%;
+    }    
+    nav li {
+        font-size: 0.8rem;
+    }
+    footer h3, p {
+        font-size: 0.8rem;
+    }
+    footer section {
+        padding: 0 0.7rem;
+    }
+    footer .profile {
+        padding-left: 0;
+    }
+    footer .contactUs {
+        padding-right: 0;
+    }
+    .logo .namaLogo {
+        font-size: 1rem;
+    }
+    .logo .gambarLogo {
+        min-width: 36px;
+    }
+    .socialMedia .icon {
+        width: 70%;
+        padding: 5px 0;
+    }
+    .icon .iconself {
+        scale: 1.1;
+    }
+    
+    main h2 {
+        font-size: 2rem;
+    }
+    .banner {
+        margin-bottom: 10rem;
+    }
+    .bannerImage {
+        width: 100vw;
+        margin-bottom: 10rem;
+        top: 68px;
+    }
+    .bannerImage img {
+        border-radius: 0;
+        filter: brightness(50%);
+    }
+    .bannerImage .kotakBg {
+        display: none;
+    }
+    .banner .bannerText {
+        width: 70%;
+        padding: 0;
+        z-index: 1;
+    }
+    .bannerText p, .tagline {
+        color: white;
+    }
+    .banner .productButton {
+        width: 50%;
+    }
+
+    .history {
+        background: linear-gradient(90deg, rgba(233,237,201,0) 0%, rgba(233,237,201,0.52) 15%, rgba(254,250,224,1) 30%, rgba(254,250,224,1) 70%, rgba(233,237,201,0.52) 85%, rgba(233,237,201,0) 100%);
+        padding: 3rem 6rem;
+        margin-bottom: 4rem;
+    }
+    .history article {
+        font-size: 1rem;
+    }
+    .card {
+        margin: 1.25rem;
+        width: 40%;
+        min-width: 220px;
+    }
+    .card .productName {
+        padding-top: 10px;
+        padding-bottom: 4px;
+        font-size: 1rem;
+    }
+    .card .productPrice {
+        margin-bottom: 23px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        padding: 0.8rem 7%;
+    }
+
+    main {
+        padding: 0 7%;
+        margin-top: 62px;
+    }
+
+    .navBar {
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+    }
+
+    footer {
+        padding: 1rem 7% 0 7%;
+    }
+
+    .brand h2 {
+        font-size: 1.1rem;
+        margin-left: 2px;
+    }
+
+    .brand img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .menuButton {
+        background-color: transparent;
+        border: none;
+        width: 36px;
+        margin: 5px;
+        height: 36px;
+        margin: 0 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 11100;
+    }
+
+    header nav {
+        background-color: whitesmoke;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        transition: 0.5s ease-in-out;
+    }
+
+    header ul {
+        display: block;
+        text-align: right;
+        width: 40%;
+        margin: 5rem 10% 0 50%;
+    }
+
+    header li {
+        font-size: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: repeat(5, max-content);
+        grid-template-columns: 100%;
+        height: max-content;
+        color: white;
+        row-gap: 1rem;
+        text-align: center;
+        place-items: center;
+    }
+
+    footer .profile {
+        grid-row: 1;
+        grid-column: 1;
+        width: 60%;
+        text-align: left;
+    }
+    footer .aboutUs {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    footer .support {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    footer .contactUs {
+        grid-row: 4;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .contactIcon {
+        transform: scale(0.9);
+        margin-right: 0.3rem;
+    }
+    footer .allRights {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    .logo .namaLogo {
+        font-size: 1.25rem;
+    }
+    footer h3 {
+        font-size: 0.875rem;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+    .profile .descLogo {
+        width: 100%;
+    }
+
+    .logo .gambarLogo {
+        max-width: 48px;
+    }
+
+    .profile .socialMedia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .socialMedia .icon {
+        width: 96px;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        background-color: black;
+        width: 24px;
+        height: 0.8px;
+        border-radius: 1px;
+        transition: all 0.5s;
+        position: absolute;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+    }
+
+    .hamburger::after {
+        transform: translate(0px, 6px);
+    }
+
+    .hamburger::before {
+        transform: translate(0px, -6px);
+    }
+
+    .menuButton.open .hamburger::after {
+        transform: translate(0px, 0px);
+    }
+
+    .menuButton.open .hamburger::before {
+        transform: translate(0px, 0px);
+    }
+
+    .navBar.active nav {
+        width: 100vw;
+        background-color: white;
+    }
+    main h2 {
+        font-size: 1.5rem;
+    }
+    main p, article {
+        font-size: 0.875rem;
+    }
+    .bannerImage {
+        top: 62px;
+        height: 420px;
+    }
+
+    .banner {
+        margin-top: 2rem;
+        margin-bottom: 50%;
+    }
+
+    .banner .tagline {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        margin: 0.5rem 0;
+    }
+
+    .banner .productButton {
+        width: 60%;
+        height: 54px;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .history {
+        padding: 2rem 2.5rem;
+    }
+
+    .history article {
+        font-size: 0.875rem;
+    }
+
+    .iconPartner img {
+        width: 36px;
+    }
+
+    .card {
+        width: 65%;
+        min-width: 170px;
+        margin: 1rem 0.5rem;
+    }
+}
