@@ -3,6 +3,8 @@ Hello everyone! <br>
 This is my final project for completing the Human and Computer Interaction course where I was tasked to design and code a website interface for a toy store. It is important to know that this website is a front-end website, which means it provides the overall website appearance (UI and UX) but does not contain any databases or servers. By sharing this, I hope you can find some insights or useful information. <br>
 Thank you.
 
+<b> Figma Link: <b> https://www.figma.com/design/UebyNJOwMFXV7RtbqmDGCs/Toy-Z?node-id=0-1&node-type=canvas&t=S1ARGDirepGXvWod-0 <br>
+
 ### Landing Page <br>
 ![image](https://github.com/user-attachments/assets/e344897d-cae3-4484-955b-2dad1f40d5f0)
 
